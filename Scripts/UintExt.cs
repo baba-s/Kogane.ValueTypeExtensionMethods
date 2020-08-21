@@ -31,29 +31,7 @@ namespace Kogane
 				callback( i );
 			}
 		}
-
-		/// <summary>
-		/// 指定された回数分処理を逆順に繰り返します
-		/// </summary>
-		public static void TimesReverse( this uint self, Action callback )
-		{
-			for ( uint i = self - 1; 0 <= i; i-- )
-			{
-				callback();
-			}
-		}
-
-		/// <summary>
-		/// 指定された回数分処理を逆順に繰り返します
-		/// </summary>
-		public static void TimesReverse( this uint self, Action<uint> callback )
-		{
-			for ( uint i = self - 1; 0 <= i; i-- )
-			{
-				callback( i );
-			}
-		}
-
+		
 		/// <summary>
 		/// 数値を指定された桁数で 0 埋めした文字列を返します
 		/// </summary>
