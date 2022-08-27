@@ -1,4 +1,4 @@
-# UniValueTypeExtensionMethods
+# Kogane Value Type Extension Methods
 
 bool、byte、float、int、uint 型の拡張メソッド
 
