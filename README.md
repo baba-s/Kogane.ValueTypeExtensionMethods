@@ -108,6 +108,12 @@ public class Example : MonoBehaviour
 
         // 3桁区切りの文字列を取得
         Debug.Log( 12345.FormatWithComma() ); // 12,345
+        
+        // Enumerable.Range を実行
+        foreach ( var x in i.Range() )
+        {
+            Debug.Log( x );
+        }
     }
 }
 ```
