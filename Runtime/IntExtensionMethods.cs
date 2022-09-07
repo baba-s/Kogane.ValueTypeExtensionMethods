@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 
 namespace Kogane
 {
@@ -113,6 +115,14 @@ namespace Kogane
         public static string FormatWithComma( this int self )
         {
             return $"{self:#,##0}";
+        }
+
+        /// <summary>
+        /// Enumerable.Range を実行します
+        /// </summary>
+        public static IEnumerable<int> Range( this int self )
+        {
+            return Enumerable.Range( 0, self );
         }
     }
 }
