@@ -132,5 +132,13 @@ namespace Kogane
         {
             return Enumerable.Range( 0, self );
         }
+
+        /// <summary>
+        /// 桁数を返します
+        /// </summary>
+        public static int GetDigits( this int num )
+        {
+            return num == 0 ? 1 : ( int )Math.Log10( num ) + 1;
+        }
     }
 }

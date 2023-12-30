@@ -15,5 +15,13 @@
         {
             return ( byte )( self ? 1 : 0 );
         }
+
+        /// <summary>
+        /// true なら 1、false なら 0 の int 型に変換して返します
+        /// </summary>
+        public static int ToInt( this bool self )
+        {
+            return self ? 1 : 0;
+        }
     }
 }

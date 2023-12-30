@@ -57,5 +57,13 @@ namespace Kogane
         {
             return float.IsInfinity( self ) || float.IsNaN( self ) ? defaultValue : self;
         }
+
+        /// <summary>
+        /// ほぼ整数なら true を返します
+        /// </summary>
+        public static bool IsApproximatelyInteger( this float value, float tolerance )
+        {
+            return Math.Abs( Math.Round( value ) - value ) <= tolerance;
+        }
     }
 }
